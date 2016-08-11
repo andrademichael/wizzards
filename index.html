@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>So you want to be a wizard</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>So you want to be a wizard</h1>
+      <p>Fill out the survey below and our complex proprietary algorithm will calculate which wizard matches your character!</p>
+      <form>
+        <div id="nameBox" class="form-group">
+          <label for="nameInput">Name:</label>
+          <input id="nameInput" class="form-control" type="text" aria-describedby="nameHelp">
+          <span id="nameHelp" class="help-block"></span>
+        </div>
+        <label for="question1">You find $20 (or 20 gold, or 20 otherfakecurrency) on the ground, you: </label>
+        <select class="form-control" id="question1">
+          <option value="1">Turn it in to the authorities</option>
+          <option value="2">Realize it is probably a trap and leave it alone</option>
+          <option value="3">Something mysterious, probably</option>
+          <option value="4">Take it and turn someone into an animal</option>
+          <option value="5">Take it and try to depose my brother</option>
+          <option value="20">Try to destroy the world</option>
+        </select>
+        <label for="question2">What do you like to do for fun</label>
+        <select class="form-control" id="question2">
+          <option value="1">Sports</option>
+          <option value="2">Run away from things</option>
+          <option value="3">Plot, but for good!</option>
+          <option value="4">Play with my pets ;)</option>
+          <option value="5">Plot, but for evil!</option>
+          <option value="20">Try to destroy the world</option>
+        </select>
+        <label for="question3">What is your favorite spell</label>
+        <select class="form-control" id="question3">
+          <option value="1">Whatever makes brooms fly</option>
+          <option value="2">...I can absolutely do many spells because I am a real wizzard</option>
+          <option value="3">Something mysterious, probably</option>
+          <option value="4">Turning people into animals</option>
+          <option value="5">Something to do with elves, probably</option>
+          <option value="20">Anything jewelry related</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Wizard me!</button>
+      </form>
+      <div id="wizOut">
+        <h1>You are <span id="wizard"></span>!!</h1>
+        <h2>Congratulations <span id="nameOut"></span></h2>
+      </div>
+      <div>
+        <img id="circe" src="img/circe.jpg" alt="Circe, the Greek one">
+        <img id="harry" src="img/harry.jpg" alt="Harry Potter">
+        <img id="moiraine" src="img/moiraine.jpg" alt="Moiraine Damodred">
+        <img id="morgan" src="img/morgan.jpg" alt="Morgan Le Fay">
+        <img id="rincewind" src="img/rincewind.png" alt="Rincewind the Wizzard">
+        <img id="sauron" src="img/sauron.jpg" alt="Sauron">
+      </div>
+    </div>
+  </body>
+</html>
